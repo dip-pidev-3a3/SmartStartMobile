@@ -68,7 +68,7 @@ public class LoginForm extends Form {
         Button loginButton = new Button("LOGIN");
         loginButton.setUIID("LoginButton");
         loginButton.addActionListener(e -> {
-              BlogAffichage b=new BlogAffichage(theme);
+              ProfileForm b=new ProfileForm(theme);
                 b.show();
         });
         

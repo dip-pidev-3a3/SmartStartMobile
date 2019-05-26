@@ -45,7 +45,7 @@ public class ProfileForm extends SideMenuBaseForm {
         super(BoxLayout.y());
         Toolbar tb = getToolbar();
         tb.setTitleCentered(false);
-        Image profilePic = res.getImage("user-picture.jpg");
+        Image profilePic = res.getImage("fileStart.png");
         Image mask = res.getImage("round-mask.png");
         profilePic = profilePic.fill(mask.getWidth(), mask.getHeight());
         Label profilePicLabel = new Label(profilePic, "ProfilePicTitle");
@@ -71,8 +71,8 @@ public class ProfileForm extends SideMenuBaseForm {
                         FlowLayout.encloseIn(menuButton),
                         BorderLayout.centerAbsolute(
                                 BoxLayout.encloseY(
-                                    new Label("Jennifer Wilson", "Title"),
-                                    new Label("UI/UX Designer", "SubTitle")
+                                    new Label("Welcome Back", "Title"),
+                                    new Label("We Are SmartStart", "SubTitle")
                                 )
                             ).add(BorderLayout.WEST, profilePicLabel),
                         GridLayout.encloseIn(2, remainingTasks, completedTasks)

@@ -64,6 +64,7 @@ public abstract class SideMenuBaseForm extends Form {
         getToolbar().addMaterialCommandToSideMenu("  Dashboard", FontImage.MATERIAL_DASHBOARD,  e -> showOtherForm(res));
         getToolbar().addMaterialCommandToSideMenu("  Activity", FontImage.MATERIAL_TRENDING_UP,  e -> showOtherForm(res));
         getToolbar().addMaterialCommandToSideMenu("  Complaints", FontImage.MATERIAL_SETTINGS,  e -> new ComplaintAffichage(res).show());
+        getToolbar().addMaterialCommandToSideMenu("  My Contracts", FontImage.MATERIAL_TRENDING_UP,  e -> new ContractAffichage(res).show());
         getToolbar().addMaterialCommandToSideMenu(" My Posts", FontImage.MATERIAL_ACCESS_TIME,  e -> new Myposts(res).show());
         getToolbar().addMaterialCommandToSideMenu("  Blog", FontImage.MATERIAL_BOOK,  e -> new BlogAffichage(res).show());
         getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP,  e -> new LoginForm(res).show());

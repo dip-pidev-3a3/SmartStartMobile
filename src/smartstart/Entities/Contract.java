@@ -15,24 +15,16 @@ public class Contract {
 
     private int id_contract;
     private String payment_method;
-    private Date start_date;
-    private Date finish_date;
+    private String start_date;
+    private String finish_date;
     private float sum;
-    private Application application;
-    private fos_user user;
-    private int prio;
+    private String entreprise;
+    private String freelancer;
+    private String jobTitle;
+    private String jobDescription;
 
     public Contract() {
-        application = new Application();
-        user = new fos_user();
-    }
-
-    public Contract(int id_contract, String payment_method, Date start_date, Date finish_date, float sum, Application application) {
-        this.payment_method = payment_method;
-        this.start_date = start_date;
-        this.finish_date = finish_date;
-        this.sum = sum;
-        this.application = application;
+        
     }
 
     public int getId_contract() {
@@ -51,19 +43,19 @@ public class Contract {
         this.payment_method = payment_method;
     }
 
-    public Date getStart_date() {
+    public String getStart_date() {
         return start_date;
     }
 
-    public void setStart_date(Date start_date) {
+    public void setStart_date(String start_date) {
         this.start_date = start_date;
     }
 
-    public Date getFinish_date() {
+    public String getFinish_date() {
         return finish_date;
     }
 
-    public void setFinish_date(Date finish_date) {
+    public void setFinish_date(String finish_date) {
         this.finish_date = finish_date;
     }
 
@@ -75,28 +67,37 @@ public class Contract {
         this.sum = sum;
     }
 
-    public Application getApplication() {
-        return application;
+    public String getEntreprise() {
+        return entreprise;
     }
 
-    public void setId_application(Application application) {
-        this.application = application;
+    public void setEntreprise(String entreprise) {
+        this.entreprise = entreprise;
     }
 
-    public fos_user getUser() {
-        return user;
+    public String getFreelancer() {
+        return freelancer;
     }
 
-    public void setUser(fos_user user) {
-        this.user = user;
+    public void setFreelancer(String freelancer) {
+        this.freelancer = freelancer;
     }
 
-    public int getPrio() {
-        return prio;
+    public String getJobTitle() {
+        return jobTitle;
     }
 
-    public void setPrio(int prio) {
-        this.prio = prio;
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
     }
+
+    public String getJobDescription() {
+        return jobDescription;
+    }
+
+    public void setJobDescription(String jobDescription) {
+        this.jobDescription = jobDescription;
+    }
+    
 
 }
